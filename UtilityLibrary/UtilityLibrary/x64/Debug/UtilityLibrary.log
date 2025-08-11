@@ -1,2 +1,24 @@
 ﻿  UtilityLibrary.cpp
+C:\Users\hamma\Documents\GitHub\Course11\UtilityLibrary\clsString.h(40,20): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'UtilityLibrary.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\UtilityLibrary\clsString.h(45,25): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'UtilityLibrary.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\UtilityLibrary\clsString.h(58,26): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'UtilityLibrary.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\UtilityLibrary\clsString.h(182,21): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'UtilityLibrary.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\UtilityLibrary\clsString.h(290,26): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'UtilityLibrary.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\UtilityLibrary\clsString.h(339,18): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'UtilityLibrary.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\UtilityLibrary\clsUtil.h(67,5): warning C4102: 'defualt': unreferenced label
+  (compiling source file 'UtilityLibrary.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\UtilityLibrary\clsUtil.h(73,1): warning C4715: 'clsUtil::GetRandomCharacter': not all control paths return a value
   UtilityLibrary.vcxproj -> C:\Users\hamma\Documents\GitHub\Course11\UtilityLibrary\x64\Debug\UtilityLibrary.exe
