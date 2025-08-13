@@ -1,0 +1,21 @@
+﻿  BankSystem.cpp
+C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\BankSystem.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsString.h(43,25): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'BankSystem.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsString.h(48,29): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'BankSystem.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsString.h(60,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'BankSystem.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsString.h(197,29): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'BankSystem.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsString.h(328,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'BankSystem.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsString.h(376,22): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'BankSystem.cpp')
+  
+  BankSystem.vcxproj -> C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\x64\Debug\BankSystem.exe
