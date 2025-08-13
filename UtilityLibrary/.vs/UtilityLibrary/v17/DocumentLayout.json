@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "clsString.h",
               "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\UtilityLibrary\\clsString.h",
               "RelativeToolTip": "clsString.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAMABAAAAAAAAAAAwwOUBAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-08-11T02:33:01.87Z",
               "EditorCaption": ""
@@ -57,7 +57,7 @@
               "RelativeDocumentMoniker": "clsDate.h",
               "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\UtilityLibrary\\clsDate.h",
               "RelativeToolTip": "clsDate.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-08-11T02:31:35.969Z",
               "EditorCaption": ""
@@ -72,8 +72,7 @@
               "RelativeToolTip": "UtilityLibrary.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-11T02:01:44.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T02:01:44.354Z"
             },
             {
               "$type": "Document",
@@ -85,8 +84,7 @@
               "RelativeToolTip": "clsUtil.h",
               "ViewState": "AgIAAAoAAAAAAAAAAAAAAB0AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-11T02:01:42.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T02:01:42.265Z"
             }
           ]
         }
