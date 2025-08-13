@@ -17,15 +17,4 @@ C:\Users\hamma\Documents\GitHub\Course11\InputValidateLibrary\clsString.h(290,26
 C:\Users\hamma\Documents\GitHub\Course11\InputValidateLibrary\clsString.h(339,18): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
   (compiling source file 'InputValidateLibrary.cpp')
   
-C:\Users\hamma\Documents\GitHub\Course11\InputValidateLibrary\clsInputValidate.h(85,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'InputValidateLibrary.cpp')
-  
-C:\Users\hamma\Documents\GitHub\Course11\InputValidateLibrary\clsInputValidate.h(85,36): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'InputValidateLibrary.cpp')
-  
-C:\Users\hamma\Documents\GitHub\Course11\InputValidateLibrary\clsInputValidate.h(85,35): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
-  (compiling source file 'InputValidateLibrary.cpp')
-  
-C:\Users\hamma\Documents\GitHub\Course11\InputValidateLibrary\InputValidateLibrary.cpp(26,63): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\hamma\Documents\GitHub\Course11\InputValidateLibrary\InputValidateLibrary.cpp(26,58): warning C4305: 'argument': truncation from 'double' to 'float'
   InputValidateLibrary.vcxproj -> C:\Users\hamma\Documents\GitHub\Course11\InputValidateLibrary\x64\Debug\InputValidateLibrary.exe
