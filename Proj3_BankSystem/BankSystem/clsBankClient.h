@@ -34,6 +34,75 @@ private:
 	   return clsBankClient(enMode::EmptyMode, "", "", "", "", "", "", 0);
     }
 
+    static vector <clsBankClient> _LoadClientsDataFromFile()
+    {
+	   vector <clsBankClient> _vClients;
+
+	   fstream myFile;
+
+	   myFile.open("Clients.txt", ios::in);
+
+	   if (myFile.is_open())
+	   {
+		  string line;
+		  while (getline(myFile, line))
+		  {
+			 _vClients.push_back(_ConverLineToClientObject(line));
+		  }
+		  myFile.close();
+	   }
+	   return _vClients;
+    }
+
+    static string _ConvertClientObjectToLine(clsBankClient Client, string Seperator = "#//#")
+    {
+	   string stClientRecord = "";
+	   stClientRecord = Client.FirstName + Seperator;
+	   stClientRecord = Client.LastName + Seperator;
+	   stClientRecord = Client.Email + Seperator;
+	   stClientRecord = Client.Phone + Seperator;
+	   stClientRecord = Client.AccountNumber() + Seperator;
+	   stClientRecord = Client.PinCode + Seperator;
+	   stClientRecord = to_string(Client.AccountBalance) + Seperator;
+
+	   return stClientRecord;
+    }
+
+    static void _SaveClientsDataToFile(vector <clsBankClient> vClients)
+    {
+
+	   fstream myFile; 
+
+	   myFile.open("Clients.txt", ios::out);
+
+	   if (myFile.is_open())
+	   {
+		  string line;
+		  for (clsBankClient& C : vClients)
+		  {
+			 line = _ConvertClientObjectToLine(C);
+			 myFile << line << endl;
+		  }
+		  myFile.close();
+	   }
+
+    }
+
+    void _Update()
+    {
+	   vector <clsBankClient> _vClients;
+	   _vClients = _LoadClientsDataFromFile();
+
+	   for (clsBankClient& C : _vClients)
+	   {
+		  if (C.AccountNumber() == AccountNumber())
+		  {
+			 C = *this;
+			 break;
+		  }
+	   }
+	   _SaveClientsDataToFile(_vClients);
+    }
 
 
 public:
@@ -151,5 +220,27 @@ public:
 
 	   return (!Client.IsEmpty());
     }
+
+    enum enSaveResults { svFaildEmptyObject = 0, svSucceeded = 1 };
+
+    enSaveResults Save()
+    {
+	   switch (_Mode)
+	   {
+	   case enMode::EmptyMode:
+	   {
+		  return enSaveResults::svFaildEmptyObject;
+	   }
+	   case enMode::UpdateMode:
+	   {
+		  _Update();
+		  return enSaveResults::svSucceeded;
+
+		  break;
+	   }
+	   }
+	   
+    }
+
 };
 
