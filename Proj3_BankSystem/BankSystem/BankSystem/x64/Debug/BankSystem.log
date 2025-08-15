@@ -30,7 +30,7 @@ C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsInputVal
 C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsUtil.h(64,5): warning C4102: 'defualt': unreferenced label
   (compiling source file 'BankSystem.cpp')
   
-C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\BankSystem.cpp(29,62): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\BankSystem.cpp(229,48): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\BankSystem.cpp(30,62): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\BankSystem.cpp(230,48): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsBankClient.h(330,1): warning C4715: 'clsBankClient::Save': not all control paths return a value
   BankSystem.vcxproj -> C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\x64\Debug\BankSystem.exe

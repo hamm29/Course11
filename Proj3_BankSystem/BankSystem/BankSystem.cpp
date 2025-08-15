@@ -5,6 +5,7 @@
 #include "clsPerson.h"
 #include <iomanip>
 #include "clsUtil.h"
+#include "clsMainScreen.h"
 
 using namespace std;
 
@@ -230,10 +231,15 @@ void ShowTotalBalances()
 
 }
 
+void ShowMainMenue()
+{
+    clsMainScreen::ShowMainMenue();
+}
+
 
 int main()
 {
-    ShowTotalBalances();
+    ShowMainMenue();
     system("pause>0");
     return 0;
 }
