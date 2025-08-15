@@ -5,13 +5,14 @@
 #include "clsScreen.h"
 #include "clsInputValidate.h"
 #include "clsClientListScreen.h"
+#include "clsAddNewClient.h"
+#include "clsDeleteClientScreen.h"
+
 
 using namespace std;
 
 class clsMainScreen : protected clsScreen
 {
-
-
 
 private:
     enum enMainMenueOptions {
@@ -41,15 +42,14 @@ private:
 	   clsClientListScreen::ShowClientsList();
     }
 
-
     static void _ShowAddNewClientSereen()
     {
-	   cout << "\nAdd new Client will be here...\n";
+	   clsAddNewClient::ShowAddNewClientScreen();
     }
 
     static void _ShowDeleteClientSereen()
     {
-	   cout << "\nDelete Client will be here...\n";
+	   clsDeleteClientScreen::ShowDeleteClientScreen();
     }
 
     static void _ShowUpdateClientSereen()
