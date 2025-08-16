@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E959D6D4-6996-40E4-9F2F-5A723245E91D}|BankSystem.vcxproj|C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsFindClientScreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E959D6D4-6996-40E4-9F2F-5A723245E91D}|BankSystem.vcxproj|solutionrelative:clsFindClientScreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E959D6D4-6996-40E4-9F2F-5A723245E91D}|BankSystem.vcxproj|C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsUpdateClientScreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E959D6D4-6996-40E4-9F2F-5A723245E91D}|BankSystem.vcxproj|solutionrelative:clsUpdateClientScreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -35,38 +39,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "clsFindClientScreen.h",
+              "DocumentMoniker": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsFindClientScreen.h",
+              "RelativeDocumentMoniker": "clsFindClientScreen.h",
+              "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsFindClientScreen.h",
+              "RelativeToolTip": "clsFindClientScreen.h",
+              "ViewState": "AgIAACQAAAAAAAAAAAAIwCwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-16T08:27:00.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "clsUpdateClientScreen.h",
               "DocumentMoniker": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsUpdateClientScreen.h",
               "RelativeDocumentMoniker": "clsUpdateClientScreen.h",
               "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsUpdateClientScreen.h",
               "RelativeToolTip": "clsUpdateClientScreen.h",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAUwFEAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-08-15T10:40:42.251Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "clsMainScreen.h",
               "DocumentMoniker": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsMainScreen.h",
               "RelativeDocumentMoniker": "clsMainScreen.h",
               "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsMainScreen.h",
               "RelativeToolTip": "clsMainScreen.h",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAADkAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAmwD4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-08-14T18:14:50.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BankSystem.cpp",
               "DocumentMoniker": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\BankSystem.cpp",
               "RelativeDocumentMoniker": "BankSystem.cpp",
               "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\BankSystem.cpp",
               "RelativeToolTip": "BankSystem.cpp",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-13T09:50:46.089Z",
               "EditorCaption": ""

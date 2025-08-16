@@ -10,10 +10,6 @@
 using namespace std;
 
 
-void UpdateClient()
-{
-}
-
 void AddNewClient()
 {
     string AccountNumber = "";
@@ -23,13 +19,6 @@ void AddNewClient()
     
 
 }
-
-void DeleteClient()
-{
-    
-}
-
-
 
 void PrintClientRecordBalanceLine(clsBankClient Client)
 {
