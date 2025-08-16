@@ -36,7 +36,18 @@ private:
 
     static void _PrintClient(clsBankClient Client)
     {
-	   Client.Print();
+	   cout << "\nClient Card:";
+	   cout << "\n___________________";
+	   cout << "\nFirstName   : " << Client.FirstName;
+	   cout << "\nLastName    : " << Client.LastName;
+	   cout << "\nFull Name   : " << Client.FullName();
+	   cout << "\nEmail       : " << Client.Email;
+	   cout << "\nPhone       : " << Client.Phone;
+	   cout << "\nAcc. Number : " << Client.AccountNumber();
+	   cout << "\nPassword    : " << Client.PinCode;
+	   cout << "\nBalance     : " << Client.AccountBalance;
+	   cout << "\n___________________\n";
+
     }
 
 public:
