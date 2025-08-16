@@ -365,4 +365,16 @@ public:
         return TotalBalnce;
     }
 
+    void Deposit(float Amount)
+    {
+        _AccountBalance += Amount;
+        Save();
+    }
+
+    void Withdraw(float Amount)
+    {
+        _AccountBalance -= Amount;
+        Save();
+    }
+
 };

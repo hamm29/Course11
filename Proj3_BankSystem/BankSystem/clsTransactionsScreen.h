@@ -2,6 +2,7 @@
 
 #include "clsScreen.h"
 #include "clsInputValidate.h"
+#include "clsDepositScreen.h"
 
 class clsTransactionsScreen : protected clsScreen
 {
@@ -23,7 +24,9 @@ private:
 
     static void _ShowDepositScreen()
     {
-	   cout << "\nDeposit Screen Will be here soon.\n";
+	   _DrawScreenHeader("\tDeposit Screen");
+
+	   clsDepositScreen::ShowDepositScreen();
     }
 
     static void _ShowWithdrawScreen()
