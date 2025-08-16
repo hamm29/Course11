@@ -4,6 +4,7 @@
 #include "clsInputValidate.h"
 #include "clsDepositScreen.h"
 #include "clsWithdrawScreen.h"
+#include "clsTotalBalancesScreen.h"
 
 class clsTransactionsScreen : protected clsScreen
 {
@@ -44,13 +45,9 @@ private:
 
     static void _ShowTotalBalancesScreen()
     {
-	   cout << "\nTotal Balances Screen Will be here soon.\n";
+	   //cout << "\nTotal Balances Screen Will be here soon.\n";
+	   clsTotalBalancesScreen::ShowTotalBalances();
     }
-
-   /* static void _ShowMainMenueScreen()
-    {
-	   
-    }*/
 
     static void _PerformTransactionsMenueOption(enTransactionsMenueOptions UserChoice)
     {

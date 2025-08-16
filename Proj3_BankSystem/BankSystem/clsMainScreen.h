@@ -113,10 +113,12 @@ private:
 	   case enMainMenueOptions::eShowTransactionsMenue:
 		  system("cls");
 		  _ShowTransactionMenueSereen();
+		  _GoBackToMainMenueScreen();
 		  break;
 	   case enMainMenueOptions::eManageUsers:
 		  system("cls");
 		  _ShowManageUsersSereen();
+		  _GoBackToMainMenueScreen();
 		  break;
 	   case enMainMenueOptions::eExit:
 		  system("cls");
