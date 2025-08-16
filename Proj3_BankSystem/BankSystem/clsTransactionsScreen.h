@@ -3,12 +3,12 @@
 #include "clsScreen.h"
 #include "clsInputValidate.h"
 #include "clsDepositScreen.h"
+#include "clsWithdrawScreen.h"
 
 class clsTransactionsScreen : protected clsScreen
 {
 
 private:
-
 
     enum enTransactionsMenueOptions {
 	   eDeposit = 1, eWithdraw = 2, eTotalBalances = 3,
@@ -22,6 +22,13 @@ private:
 	   return Choice;
     }
 
+    static void GoBackToTransactionsMenue()
+    {
+	   cout << "\n\nPress any key to go back to Transactions Menue...";
+	   system("pause>0");
+	   ShowTransactionsMenue();
+    }
+
     static void _ShowDepositScreen()
     {
 	   _DrawScreenHeader("\tDeposit Screen");
@@ -31,7 +38,8 @@ private:
 
     static void _ShowWithdrawScreen()
     {
-	   cout << "\nWithdraw Screen Will be here soon.\n";
+	   //cout << "\nWithdraw Screen Will be here soon.\n";
+	   clsWithdrawScreen::ShowWithdrawScreen();
     }
 
     static void _ShowTotalBalancesScreen()
@@ -51,21 +59,22 @@ private:
 	   case enTransactionsMenueOptions::eDeposit:
 		  system("cls");
 		  _ShowDepositScreen();
+		  GoBackToTransactionsMenue();
 		  break;
 	   case enTransactionsMenueOptions::eWithdraw:
 		  system("cls");
 		  _ShowWithdrawScreen();
+		  GoBackToTransactionsMenue();
 		  break;
 	   case enTransactionsMenueOptions::eTotalBalances:
 		  system("cls");
 		  _ShowTotalBalancesScreen();
+		  GoBackToTransactionsMenue();
 		  break;
 	   case enTransactionsMenueOptions::eMainMenue:
 	   {
 
 	   }
-	   default:
-		  break;
 	   }
 
     }

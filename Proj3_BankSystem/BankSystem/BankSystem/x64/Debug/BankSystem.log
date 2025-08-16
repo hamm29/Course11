@@ -39,6 +39,10 @@ C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsUpdateCl
 C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsDepositScreen.h(50,47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'BankSystem.cpp')
   
+C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsWithdrawScreen.h(50,47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'BankSystem.cpp')
+  
 C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\BankSystem.cpp(62,48): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsBankClient.h(314,1): warning C4715: 'clsBankClient::Save': not all control paths return a value
+C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsBankClient.h(385,1): warning C4715: 'clsBankClient::Withdraw': not all control paths return a value
   BankSystem.vcxproj -> C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\x64\Debug\BankSystem.exe
