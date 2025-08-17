@@ -134,6 +134,7 @@
     <ClInclude Include="clsDepositScreen.h" />
     <ClInclude Include="clsFindClientScreen.h" />
     <ClInclude Include="clsInputValidate.h" />
+    <ClInclude Include="clsListUsersScreen.h" />
     <ClInclude Include="clsMainScreen.h" />
     <ClInclude Include="clsManageUsersScreen.h" />
     <ClInclude Include="clsPerson.h" />
@@ -142,6 +143,7 @@
     <ClInclude Include="clsTotalBalancesScreen.h" />
     <ClInclude Include="clsTransactionsScreen.h" />
     <ClInclude Include="clsUpdateClientScreen.h" />
+    <ClInclude Include="clsUser.h" />
     <ClInclude Include="clsUtil.h" />
     <ClInclude Include="clsWithdrawScreen.h" />
     <ClInclude Include="resource.h" />
