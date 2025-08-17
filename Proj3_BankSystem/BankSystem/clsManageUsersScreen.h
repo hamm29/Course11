@@ -4,6 +4,9 @@
 #include "clsScreen.h"
 #include "clsInputValidate.h"
 #include "clsListUsersScreen.h"
+#include "clsAddNewUserScreen.h"
+#include "clsDeleteUserScreen.h"
+#include "clsUpdateUserScreen.h"
 
 class clsManageUsersScreen : protected clsScreen
 {
@@ -30,17 +33,20 @@ private:
 
     static void _ShowAddNewUsersScreen()
     {
-	   cout << "\nShow Add New User will be here.\n";
+	   //cout << "\nShow Add New User will be here.\n";
+	   clsAddNewUserScreen::showAddNewUserScreen();
     }
 
     static void _ShowDeleteUsersScreen()
     {
-	   cout << "\nShow Delete User will be here.\n";
+	   //cout << "\nShow Delete User will be here.\n";
+	   clsDeleteUserScreen::ShowDeleteUserScreen();
     }
 
     static void _ShowUpdateUsersScreen()
     {
-	   cout << "\nShow Update User will be here.\n";
+	   //cout << "\nShow Update User will be here.\n";
+	   clsUpdateUserScreen::ShowUpdateUserScreen();
     }
 
     static void _ShowFindUsersScreen()

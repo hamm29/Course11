@@ -8,6 +8,7 @@
 
 using namespace std;
 
+
 class clsUser : public clsPerson
 {
 private:
@@ -81,7 +82,7 @@ private:
     {
 
         fstream MyFile;
-        MyFile.open("Clients.txt", ios::out);//overwrite
+        MyFile.open("Users.txt", ios::out);//overwrite
 
         string DataLine;
 
@@ -168,7 +169,7 @@ public:
 
     bool IsEmptyMode()
     {
-	   return (_Mode = enMode::EmptyMode);
+	   return (_Mode == enMode::EmptyMode);
     }
 
     bool MarkedForDelete()
@@ -320,5 +321,10 @@ public:
     {
         return _LoadUsersDataFromFile();
     }
+
+    enum enPermissions {
+        eAll = -1, pListClients = 1, pAddNewClient = 2, pDeleteClient = 4,
+        pUpdateClients = 8, pFindClient = 16, pTranactions = 32, pManageUsers = 64
+    };
 };
 
