@@ -7,6 +7,7 @@
 #include "clsAddNewUserScreen.h"
 #include "clsDeleteUserScreen.h"
 #include "clsUpdateUserScreen.h"
+#include "clsFindUserScreen.h"
 
 class clsManageUsersScreen : protected clsScreen
 {
@@ -51,7 +52,8 @@ private:
 
     static void _ShowFindUsersScreen()
     {
-	   cout << "\nShow Find User will be here.\n";
+	   //cout << "\nShow Find User will be here.\n";
+	   clsFindUserScreen::ShowFindUserScreen();
     }
 
     static void _GoBackToManageUsersScreen()
@@ -112,6 +114,11 @@ public:
 
     static void ShowManageUsersScreen()
     {
+	   if (!CheckAccessRights(clsUser::enPermissions::pManageUsers))
+	   {
+		  return;
+	   }
+
 	   system("cls");
 	   _DrawScreenHeader("\t\tManage Users Menue");
 	   cout << setw(37) << left << "" << "=====================================================\n";

@@ -1,5 +1,4 @@
 ﻿  BankSystem.cpp
-C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\BankSystem.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsString.h(43,25): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
   (compiling source file 'BankSystem.cpp')
   
@@ -18,28 +17,28 @@ C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsString.h
 C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsString.h(376,22): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
   (compiling source file 'BankSystem.cpp')
   
-C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsBankClient.h(31,65): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'BankSystem.cpp')
-  
 C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsInputValidate.h(101,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'BankSystem.cpp')
   
 C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsInputValidate.h(105,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'BankSystem.cpp')
   
-C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsUtil.h(64,5): warning C4102: 'defualt': unreferenced label
+C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsBankClient.h(31,65): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'BankSystem.cpp')
   
 C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsAddNewClient.h(34,62): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'BankSystem.cpp')
   
-C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsUpdateClientScreen.h(30,62): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsUpdateClientScreen.h(31,62): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'BankSystem.cpp')
   
 C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsDepositScreen.h(50,47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'BankSystem.cpp')
   
 C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsWithdrawScreen.h(50,47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'BankSystem.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsUtil.h(64,5): warning C4102: 'defualt': unreferenced label
   (compiling source file 'BankSystem.cpp')
   
 C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsTotalBalancesScreen.h(59,82): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data

@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include "clsScreen.h"
+#include "clsUser.h"
 
 
 class clsDeleteClientScreen : protected clsScreen
@@ -27,6 +28,12 @@ public:
 
     static void ShowDeleteClientScreen()
     {
+
+	   if (!CheckAccessRights(clsUser::enPermissions::pDeleteClient))
+	   {
+		  return;
+	   }
+
 	   _DrawScreenHeader("\tDelete Client Screen");
 
 	   string AccountNumber = "";

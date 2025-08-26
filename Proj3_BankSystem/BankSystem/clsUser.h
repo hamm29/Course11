@@ -326,5 +326,18 @@ public:
         eAll = -1, pListClients = 1, pAddNewClient = 2, pDeleteClient = 4,
         pUpdateClients = 8, pFindClient = 16, pTranactions = 32, pManageUsers = 64
     };
+
+    bool ShowAccessPermission(enPermissions Permission)
+    {
+        if (this->Permissions == -1)
+            return true;
+
+        if ((Permission & this->Permissions) == Permission)
+        {
+            return true;
+        }
+        else
+            return false;
+    }
 };
 

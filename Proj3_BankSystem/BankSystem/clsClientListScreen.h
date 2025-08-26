@@ -4,6 +4,7 @@
 #include "clsBankClient.h"
 #include "clsScreen.h"
 #include <iomanip>
+#include "clsUser.h"
 
 using namespace std;
 
@@ -25,8 +26,14 @@ private :
 
 public:
 
+
     static void ShowClientsList()
     {
+
+        if (!CheckAccessRights(clsUser::enPermissions::pListClients))
+        {
+            return;
+        }
 
 	   vector <clsBankClient> vClients = clsBankClient::GetClientsList();
 
