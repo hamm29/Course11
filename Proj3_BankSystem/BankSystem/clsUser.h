@@ -88,6 +88,22 @@ private:
         return LoginRegisterLine;
     }
 
+    
+    struct stLoginRegisterRecord;
+    static stLoginRegisterRecord _ConvertLoginRegisterLineToRecord(string Line, string Seperator = "#//#")
+    {
+        stLoginRegisterRecord LoginRegisterRecord;
+
+        vector <string> LoginRegisterLine = clsString::Split(Line, Seperator);
+
+        LoginRegisterRecord.DateTime = LoginRegisterLine[0];
+        LoginRegisterRecord.UserName = LoginRegisterLine[1];
+        LoginRegisterRecord.Password = LoginRegisterLine[2];
+        LoginRegisterRecord.Permissions = stoi(LoginRegisterLine[3]);
+
+        return LoginRegisterRecord;
+    }
+
     static void _SaveUsersDataToFile(vector <clsUser> vUsers)
     {
 
@@ -162,6 +178,15 @@ private:
     }
 
 public:
+
+
+    struct stLoginRegisterRecord
+    {
+        string DateTime;
+        string UserName;
+        string Password;
+        int Permissions;
+    };
 
     clsUser(enMode Mode, string FirstName, string LastName, string Email, string Phone,
 	   string Username, string Password, int Permissions) : clsPerson(FirstName, LastName, Email, Phone)
@@ -337,6 +362,7 @@ public:
         pUpdateClients = 8, pFindClient = 16, pTranactions = 32, pManageUsers = 64
     };
 
+
     bool ShowAccessPermission(enPermissions Permission)
     {
         if (this->Permissions == -1)
@@ -363,6 +389,31 @@ public:
 
             myFile.close();
         }
+    }
+
+    static vector <stLoginRegisterRecord> GetLoginRegisterList()
+    {
+        vector <stLoginRegisterRecord> vLoginRegisterRecord;
+
+        fstream MyFile;
+        MyFile.open("LoginRegister.txt", ios::in);
+
+        if (MyFile.is_open())
+        {
+            string Line;
+
+            stLoginRegisterRecord LoginRegisterRecord;
+
+            while (getline(MyFile, Line))
+            {
+                LoginRegisterRecord = _ConvertLoginRegisterLineToRecord(Line);
+
+                vLoginRegisterRecord.push_back(LoginRegisterRecord);
+            }
+
+            MyFile.close();
+        }
+        return vLoginRegisterRecord;
     }
 
 };
