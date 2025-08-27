@@ -15,6 +15,9 @@ class clsDate
 
 private:
 
+    short _Hour = 0;
+    short _Minute = 0;
+    short _Second = 0;
     short _Day = 1;
     short _Month = 1;
     short _Year = 1900;
@@ -25,6 +28,9 @@ public:
     {
 	   time_t t = time(0);
 	   tm* now = localtime(&t);
+	   _Hour = now->tm_hour;
+	   _Minute = now->tm_min;
+	   _Second = now->tm_sec;
 	   _Day = now->tm_mday;
 	   _Month = now->tm_mon + 1;
 	   _Year = now->tm_year + 1900;
@@ -87,6 +93,42 @@ public:
 	   return _Year;
     }
     __declspec(property(get = GetYear, put = SetYear)) short Year;
+
+
+    void SetHour(short Hour)
+    {
+	   _Hour = Hour;
+    }
+
+    short GetHour()
+    {
+	   return _Hour;
+    }
+    __declspec(property(get = GetHour, put = SetHour)) short Hour;
+
+
+    void SetMinute(short Minute)
+    {
+	   _Minute = Minute;
+    }
+
+    short GetMinute()
+    {
+	   return _Minute;
+    }
+    __declspec(property(get = GetMinute, put = SetMinute)) short Minute;
+
+
+    void SetSecond(short Second)
+    {
+	   _Second = Second;
+    }
+
+    short GetSecond()
+    {
+	   return _Second;
+    }
+    __declspec(property(get = GetSecond, put = SetSecond)) short Second;
 
     void Print()
     {
@@ -154,6 +196,39 @@ public:
     {
 	   return  DateToString(*this);
     }
+
+    static string GetSystemDateTimeString()
+    {
+	   time_t t = time(0);
+	   tm* now = localtime(&t);
+
+	   short Day, Month, Year, Hour, Minute, Second;
+
+	   Year = now->tm_year + 1900;
+	   Month = now->tm_mon + 1;
+	   Day = now->tm_mday;
+	   Hour = now->tm_hour;
+	   Minute = now->tm_min;
+	   Second = now->tm_sec;
+
+	   return (to_string(Day) + "/" + to_string(Month) + "/"
+		  + to_string(Year) + " - "
+		  + to_string(Hour) + ":" + to_string(Minute)
+		  + ":" + to_string(Second));
+
+    }
+
+    /*static string DateWithTimeToString(clsDate Date)
+    {
+	   return  to_string(Date.Day) + "/" + to_string(Date.Month) + "/" + to_string(Date.Year)
+		  + " - " + to_string(Date.Hour) + ":" + to_string(Date.Minute) + ":" + to_string(Date.Second);
+
+    }
+
+    string DateWithTimeToString()
+    {
+	   return DateWithTimeToString(*this);
+    }*/
 
     static bool isLeapYear(short Year)
     {

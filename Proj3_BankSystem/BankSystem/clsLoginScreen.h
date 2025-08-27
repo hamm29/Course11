@@ -5,6 +5,8 @@
 #include "clsScreen.h"
 #include "clsMainScreen.h"
 
+
+
 class clsLoginScreen : protected clsScreen
 {
 
@@ -43,10 +45,12 @@ private:
 		  LoginFaild = CurrentUser.IsEmptyMode();
 	   } while (LoginFaild);
 
+	   CurrentUser.RegisterLogin();
 	   clsMainScreen::ShowMainMenue();
 	   return true;
     }
 
+    
 public:
 
     static bool ShowLoginScreen()

@@ -5,6 +5,7 @@
 #include "clsPerson.h"
 #include <fstream>
 #include "clsString.h"
+#include "clsDate.h"
 
 using namespace std;
 
@@ -76,7 +77,16 @@ private:
             vUser[3], vUser[4], vUser[5], stoi(vUser[6]));
     }
 
-    
+    string _PrepareLogInRecord(string Seperator = "#//#")
+    {
+        string LoginRegisterLine = "";
+        LoginRegisterLine = clsDate::GetSystemDateTimeString() + Seperator;
+        LoginRegisterLine += Username + Seperator;
+        LoginRegisterLine += Password + Seperator;
+        LoginRegisterLine += to_string(Permissions);
+
+        return LoginRegisterLine;
+    }
 
     static void _SaveUsersDataToFile(vector <clsUser> vUsers)
     {
@@ -339,5 +349,21 @@ public:
         else
             return false;
     }
+
+    void RegisterLogin()
+    {
+        string stDataLine = _PrepareLogInRecord();
+
+        fstream myFile;
+        myFile.open("LoginRegister.txt", ios::out | ios::app);
+
+        if (myFile.is_open())
+        {
+            myFile << stDataLine << endl;
+
+            myFile.close();
+        }
+    }
+
 };
 
