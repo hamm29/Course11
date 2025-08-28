@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E959D6D4-6996-40E4-9F2F-5A723245E91D}|BankSystem.vcxproj|C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsAddNewUserScreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E959D6D4-6996-40E4-9F2F-5A723245E91D}|BankSystem.vcxproj|solutionrelative:clsAddNewUserScreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E959D6D4-6996-40E4-9F2F-5A723245E91D}|BankSystem.vcxproj|C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsLoginRegisterScreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E959D6D4-6996-40E4-9F2F-5A723245E91D}|BankSystem.vcxproj|solutionrelative:clsLoginRegisterScreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E959D6D4-6996-40E4-9F2F-5A723245E91D}|BankSystem.vcxproj|C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsUser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E959D6D4-6996-40E4-9F2F-5A723245E91D}|BankSystem.vcxproj|solutionrelative:clsUser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E959D6D4-6996-40E4-9F2F-5A723245E91D}|BankSystem.vcxproj|C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsMainScreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E959D6D4-6996-40E4-9F2F-5A723245E91D}|BankSystem.vcxproj|solutionrelative:clsMainScreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E959D6D4-6996-40E4-9F2F-5A723245E91D}|BankSystem.vcxproj|C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsClientListScreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E959D6D4-6996-40E4-9F2F-5A723245E91D}|BankSystem.vcxproj|solutionrelative:clsClientListScreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E959D6D4-6996-40E4-9F2F-5A723245E91D}|BankSystem.vcxproj|C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsUser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E959D6D4-6996-40E4-9F2F-5A723245E91D}|BankSystem.vcxproj|solutionrelative:clsUser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,41 +42,64 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "clsAddNewUserScreen.h",
+              "DocumentMoniker": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsAddNewUserScreen.h",
+              "RelativeDocumentMoniker": "clsAddNewUserScreen.h",
+              "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsAddNewUserScreen.h",
+              "RelativeToolTip": "clsAddNewUserScreen.h",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAiwIIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-27T18:45:10.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "clsClientListScreen.h",
+              "DocumentMoniker": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsClientListScreen.h",
+              "RelativeDocumentMoniker": "clsClientListScreen.h",
+              "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsClientListScreen.h",
+              "RelativeToolTip": "clsClientListScreen.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-27T18:35:48.843Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "clsMainScreen.h",
               "DocumentMoniker": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsMainScreen.h",
               "RelativeDocumentMoniker": "clsMainScreen.h",
               "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsMainScreen.h",
               "RelativeToolTip": "clsMainScreen.h",
-              "ViewState": "AgIAADoAAAAAAAAAAAAAAFEAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAUwFEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-08-27T06:45:29.958Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "clsLoginRegisterScreen.h",
               "DocumentMoniker": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsLoginRegisterScreen.h",
               "RelativeDocumentMoniker": "clsLoginRegisterScreen.h",
-              "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsLoginRegisterScreen.h*",
-              "RelativeToolTip": "clsLoginRegisterScreen.h*",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAyAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsLoginRegisterScreen.h",
+              "RelativeToolTip": "clsLoginRegisterScreen.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-27T04:15:00.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T04:15:00.778Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "clsUser.h",
               "DocumentMoniker": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsUser.h",
               "RelativeDocumentMoniker": "clsUser.h",
               "ToolTip": "C:\\Users\\hamma\\Documents\\GitHub\\Course11\\Proj3_BankSystem\\BankSystem\\clsUser.h",
               "RelativeToolTip": "clsUser.h",
-              "ViewState": "AgIAAIgBAAAAAAAAAAAAAJ8BAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAF8BAAAAAAAAAAAAAGoBAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-27T05:03:40.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T05:03:40.878Z"
             }
           ]
         }
