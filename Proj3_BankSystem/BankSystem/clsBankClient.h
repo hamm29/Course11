@@ -384,4 +384,17 @@ public:
         }
     }
 
+    /*bool Transfer(string From, string To, float Amount)
+    {
+        clsBankClient Client1 = Find(From);
+        Client1.Withdraw(Amount);
+
+        
+        clsBankClient Client2 = Find(To);
+        Client1.Deposit(Amount);
+        
+        
+
+    }*/
+
 };

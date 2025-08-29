@@ -2,6 +2,7 @@
 #include <iostream>
 //#include "clsMainScreen.h"
 #include "clsLoginScreen.h"
+#include "clsTransferScreen.h";
 
 using namespace std;
 
@@ -9,6 +10,7 @@ using namespace std;
 int main()
 {
     //clsMainScreen::ShowMainMenue();
+
     while(true)
     {
 	   if (!clsLoginScreen::ShowLoginScreen())
@@ -16,6 +18,8 @@ int main()
 		  break;
 	   }
     }
+
+    //clsTransferScreen::ShowTransferScreen();
 
     return 0;
 }
