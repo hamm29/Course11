@@ -5,6 +5,7 @@
 #include "clsString.h"
 #include <vector>
 #include <fstream>
+#include "clsDate.h"
 
 using namespace std;
 class clsBankClient : public clsPerson
@@ -150,6 +151,38 @@ private:
     static clsBankClient _GetEmptyClientObject()
     {
         return clsBankClient(enMode::EmptyMode, "", "", "", "", "", "", 0);
+    }
+
+    string _PrepareTransferRecord(float Amount, clsBankClient& DestinationClient, string Username,
+        string seperator = "#//#")
+    {
+        string TransferRecord = "";
+        TransferRecord += clsDate::GetSystemDateTimeString() + seperator;
+        TransferRecord += _AccountNumber + seperator;
+        TransferRecord += DestinationClient.AccountNumber() + seperator;
+        TransferRecord += to_string(Amount)+seperator;
+        TransferRecord += to_string(AccountBalance)+seperator;
+        TransferRecord += to_string(DestinationClient.AccountBalance) + seperator;
+        TransferRecord += Username;
+
+        return TransferRecord;
+    }
+
+    void _RegisterTransferOperations(float Amount, clsBankClient& DestinationClient, string Username)
+    {
+        string sDataLine = _PrepareTransferRecord(Amount, DestinationClient, Username);
+
+        fstream MyFile;
+
+        MyFile.open("TransferLog.txt", ios::out | ios::app);
+
+        if (MyFile.is_open())
+        {
+            MyFile << sDataLine << endl;
+
+            MyFile.close();
+        }
+
     }
 
 public:
@@ -384,7 +417,7 @@ public:
         }
     }
 
-    bool Transfer(float Amount, clsBankClient& DestinationClient)
+    bool Transfer(float Amount, clsBankClient& DestinationClient, string Username)
     {
         if (Amount > AccountBalance)
         {
@@ -393,8 +426,11 @@ public:
 
         Withdraw(Amount);
         DestinationClient.Deposit(Amount);
+        _RegisterTransferOperations(Amount, DestinationClient, Username);
+
         return true;
 
     }
+
 
 };

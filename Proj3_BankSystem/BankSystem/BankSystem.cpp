@@ -9,8 +9,7 @@ using namespace std;
 
 int main()
 {
-    //clsMainScreen::ShowMainMenue();
-
+    
     while(true)
     {
 	   if (!clsLoginScreen::ShowLoginScreen())
@@ -19,7 +18,6 @@ int main()
 	   }
     }
 
-    //clsTransferScreen::ShowTransferScreen();
 
     return 0;
 }
