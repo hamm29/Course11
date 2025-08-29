@@ -4,6 +4,7 @@
 #include "clsScreen.h"
 #include "clsUser.h"
 #include "clsBankClient.h"
+#include "clsInputValidate.h"
 
 
 class clsTransferScreen : protected clsScreen
@@ -21,6 +22,34 @@ private:
 
     }
 
+    static string _ReadAccountNumber()
+    {
+	   string AccountNumber;
+	   cout << "\nPlease Enter Account Number to Transfer From: ";
+	   AccountNumber = clsInputValidate::ReadString();
+	   while (!clsBankClient::IsClientExist(AccountNumber))
+	   {
+		  cout << "\nThe Account Number is not found, choose another one: ";
+		  AccountNumber = clsInputValidate::ReadString();
+	   }
+	   return AccountNumber;
+    }
+
+    static float _ReadAmount(clsBankClient SourcClient)
+    {
+	   float Amount;
+
+	   cout << "\nEnter Transfer Amount? ";
+	   Amount = clsInputValidate::ReadFloatNumber();
+
+	   while (Amount > SourcClient.AccountBalance)
+	   {
+		  cout << "\nAmount Exceeds the available Balance, Enter another amount: ";
+		  Amount = clsInputValidate::ReadFloatNumber();
+	   }
+	   return Amount;
+    }
+
 public:
 
     static void ShowTransferScreen()
@@ -30,67 +59,37 @@ public:
 
 	   bool EmptyClient = false;
 	   string AccTransferFrom = "";
-	   clsBankClient Client1 = clsBankClient::GetAddNewClientObject("");
 
-	   do
-	   {
-		  if (EmptyClient)
-		  {
-			 cout << "\nThe Account Number is not found! Try Again.";
-		  }
-		  cout << "\nPlease Enter Account Number to Transfer From: ";
-		  cin >> AccTransferFrom;
-		  Client1 = clsBankClient::Find(AccTransferFrom);
-		  EmptyClient = Client1.IsEmpty();
-	   } while (EmptyClient);
-	   _PrintClientCard(Client1);
+	   clsBankClient SourceClient = clsBankClient::Find(_ReadAccountNumber());
+	   _PrintClientCard(SourceClient);
 
+	   clsBankClient DestinationClient = clsBankClient::Find(_ReadAccountNumber());
+	   _PrintClientCard(DestinationClient);
 
-	   EmptyClient = false;
-	   string AccTransferTo = "";
-	   clsBankClient Client2 = clsBankClient::GetAddNewClientObject("");
+	   float Amount = _ReadAmount(SourceClient);
 
-	   do
-	   {
-		  if (EmptyClient)
-		  {
-			 cout << "\nThe Account Number is not found! Try Again.";
-		  }
-		  cout << "\nPlease Enter Account Number to Transfer To: ";
-		  cin >> AccTransferTo;
-		  Client2 = clsBankClient::Find(AccTransferTo);
-		  EmptyClient = Client2.IsEmpty();
-	   } while (EmptyClient);
-	   _PrintClientCard(Client2);
-
-	   float Amount = 0;
-	   cout << "\n\nEnter Transfer Amount? ";
-	   cin >> Amount;
-	   bool AmountExceedsBalance = Amount > Client1.AccountBalance;
-	   char Conformation = 'n';
-
-	   while (AmountExceedsBalance)
-	   {
-		  cout << "Amount Exceeds the available Balance, Enter another amount? ";
-		  cin >> Amount;
-		  AmountExceedsBalance = Amount > Client1.AccountBalance;
-	   }
 	   cout << "\nAre you sure you want to perform this operation? y/n? ";
-	   cin >> Conformation;
-	   if (Conformation == 'y' || Conformation == 'Y')
-	   {
-		  Client1.Withdraw(Amount);
-		  Client2.Deposit(Amount);
+	   char Answer = 'n';
+	   cin >> Answer;
 
-		  cout << "\n\nTransfer done successfully!\n";
-		  _PrintClientCard(Client1);
-		  _PrintClientCard(Client2);
+	   if (Answer == 'y' || Answer == 'Y')
+	   {
+		  if (SourceClient.Transfer(Amount, DestinationClient))
+		  {
+			 cout << "\nTransfer done successfully\n";
+		  }
+		  else
+		  {
+			 cout << "\nTransfer Faild\n";
+		  }
 	   }
 	   else
 	   {
-		  cout << "\n\nOperation was cancalled!\n\n";
+		  cout << "\n\n Operation was cancalled!\n\n";
 	   }
 
+	   _PrintClientCard(SourceClient);
+	   _PrintClientCard(DestinationClient);
 
     }
 

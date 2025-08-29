@@ -384,17 +384,17 @@ public:
         }
     }
 
-    /*bool Transfer(string From, string To, float Amount)
+    bool Transfer(float Amount, clsBankClient& DestinationClient)
     {
-        clsBankClient Client1 = Find(From);
-        Client1.Withdraw(Amount);
+        if (Amount > AccountBalance)
+        {
+            return false;
+        }
 
-        
-        clsBankClient Client2 = Find(To);
-        Client1.Deposit(Amount);
-        
-        
+        Withdraw(Amount);
+        DestinationClient.Deposit(Amount);
+        return true;
 
-    }*/
+    }
 
 };
