@@ -1,0 +1,21 @@
+﻿  Proj4_CurrencyExchange.cpp
+C:\Users\hamma\Documents\GitHub\Course11\Proj4_CurrencyExchange\clsString.h(43,25): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Proj4_CurrencyExchange.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\Proj4_CurrencyExchange\clsString.h(48,29): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Proj4_CurrencyExchange.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\Proj4_CurrencyExchange\clsString.h(60,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Proj4_CurrencyExchange.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\Proj4_CurrencyExchange\clsString.h(197,29): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Proj4_CurrencyExchange.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\Proj4_CurrencyExchange\clsString.h(328,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Proj4_CurrencyExchange.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\Proj4_CurrencyExchange\clsString.h(376,22): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Proj4_CurrencyExchange.cpp')
+  
+C:\Users\hamma\Documents\GitHub\Course11\Proj4_CurrencyExchange\Proj4_CurrencyExchange.cpp(48,26): warning C4305: 'argument': truncation from 'double' to 'float'
+  Proj4_CurrencyExchange.vcxproj -> C:\Users\hamma\Documents\GitHub\Course11\Proj4_CurrencyExchange\x64\Debug\Proj4_CurrencyExchange.exe
