@@ -13,6 +13,7 @@
 #include "clsManageUsersScreen.h"
 #include "Global.h"
 #include "clsLoginRegisterScreen.h"
+#include "clsCurrencyExchangeScreen.h"
 
 using namespace std;
 
@@ -23,13 +24,13 @@ private:
     enum enMainMenueOptions {
 	   eListClients = 1, eAddNewClient = 2, eDeleteClient = 3,
 	   eUpdateClient = 4, eFindClient = 5, eShowTransactionsMenue = 6,
-	   eManageUsers = 7, eLoginRegister = 8, eExit = 9
+	   eManageUsers = 7, eLoginRegister = 8, eCurrencyExchange = 9, eExit = 10
     };
 
     static short _ReadMainMenueOptions()
     {
-	   cout << setw(37) << left << "" << "Choose what to do from [1] to [9]: ";
-	   short Choice = clsInputValidate::ReadIntNumberBetween(1, 9);
+	   cout << setw(37) << left << "" << "Choose what to do from [1] to [10]: ";
+	   short Choice = clsInputValidate::ReadIntNumberBetween(1, 10);
 	   return Choice;
     }
 
@@ -80,6 +81,11 @@ private:
     static void _ShowLoginRegsterScreen()
     {
 	   clsLoginRegisterScreen::ShowLoginRegisterScreen();
+    }
+
+    static void _ShowCurrecnyExchangeScreen()
+    {
+	   clsCurrencyExchangeScreen::ShowCurrecnyExchangeMenue();
     }
 
     static void _ShowEndSereen()
@@ -136,6 +142,10 @@ private:
 		  system("cls");
 		  _ShowLoginRegsterScreen();
 		  _GoBackToMainMenueScreen();
+	   case enMainMenueOptions::eCurrencyExchange:
+		  system("cls");
+		  _ShowCurrecnyExchangeScreen();
+		  _GoBackToMainMenueScreen();
 	   case enMainMenueOptions::eExit:
 		  system("cls");
 		  _Logout();
@@ -165,7 +175,8 @@ public:
 	   cout << setw(37) << left << "" << "\t[6] Transactions.\n";
 	   cout << setw(37) << left << "" << "\t[7] Manage Users.\n";
 	   cout << setw(37) << left << "" << "\t[8] Login Register.\n";
-	   cout << setw(37) << left << "" << "\t[9] Logout.\n";
+	   cout << setw(37) << left << "" << "\t[9] Currency Exchange.\n";
+	   cout << setw(37) << left << "" << "\t[10] Logout.\n";
 	   cout << setw(37) << left << "" << "=====================================================\n";
 
 	   _PerformMainMenueOption(enMainMenueOptions(_ReadMainMenueOptions()));

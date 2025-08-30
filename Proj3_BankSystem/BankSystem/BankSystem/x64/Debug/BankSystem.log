@@ -60,5 +60,12 @@ C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsTransfer
 C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsTransferScreen.h(49,47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'BankSystem.cpp')
   
-C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\BankSystem.cpp(55,26): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsCurrencyExchangeScreen.h(93,10): warning C4240: nonstandard extension used: access to 'clsCurrencyExchangeScreen::enCurrecnyExchangeOptions' now defined to be 'public', previously it was defined to be 'private'
+  (compiling source file 'BankSystem.cpp')
+      C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsCurrencyExchangeScreen.h(16,10):
+      see declaration of 'clsCurrencyExchangeScreen::enCurrecnyExchangeOptions'
+  
+C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsBankClient.h(375,1): warning C4715: 'clsBankClient::Save': not all control paths return a value
+C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsBankClient.h(446,1): warning C4715: 'clsBankClient::Withdraw': not all control paths return a value
+C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\clsUser.h(333,1): warning C4715: 'clsUser::Save': not all control paths return a value
   BankSystem.vcxproj -> C:\Users\hamma\Documents\GitHub\Course11\Proj3_BankSystem\BankSystem\x64\Debug\BankSystem.exe
