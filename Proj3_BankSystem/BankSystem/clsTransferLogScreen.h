@@ -12,33 +12,25 @@ class clsTransferLogScreen : protected clsScreen
 private:
     struct stTransferLogRegister;
 
-    static void _PrintTransferLogLine()
+    static void _PrintTransferLogLine(clsBankClient::stTransferLogRecord LogRegister)
     {
-
-    }
-
-    vector <string> _ConvertDataLineToVector(string line)
-    {
-	   vector <string> vTransferLogReg = clsString::Split(line, "#//#");
 	   
-	   return vTransferLogReg;
+	   cout << "\t| " << setw(20) << left << LogRegister.Date;
+	   cout << "| " << setw(10) << left << LogRegister.SourceAccountNumber;
+	   cout << "| " << setw(10) << left << LogRegister.DestinationAccountNumber;
+	   cout << "| " << setw(10) << left << LogRegister.Amount;
+	   cout << "| " << setw(12) << left << LogRegister.srcBalanceAfter;
+	   cout << "| " << setw(12) << left << LogRegister.destBalanceAfter;
+	   cout << "| " << setw(10) << left << LogRegister.UserName;
     }
 
 public:
 
-    struct stTransferLogRegister
-    {
-	   string Date;
-	   string sAcct;
-	   string dAcct;
-	   float Amount;
-	   float sBalance;
-	   float dBalance;
-	   string User;
-    };
+    
 
     static void ShowTransferLogScreen()
     {
+	   vector <clsBankClient::stTransferLogRecord> vTransferLogRecord = clsBankClient::GetTransferLogList();
 	   string Title = "\t  Transfer Log List Screen ";
 	   string SubTitle = "\t  ()" " Record(s).";
 	   _DrawScreenHeader(Title, SubTitle);
@@ -55,13 +47,20 @@ public:
 	   cout << "\n\t-------------------------------------------------";
 	   cout << "-------------------------------------------------\n";
 
+	   if (vTransferLogRecord.size() == 0)
+		  cout << "\t\t\t\tNot Transfer Available In the system!";
+	   else
+	   {
+		  for (clsBankClient::stTransferLogRecord R : vTransferLogRecord)
+		  {
+			 _PrintTransferLogLine(R);
+			 cout << endl;
+		  }
+	   }
 
-	   cout << "\n\n\n\n";
-
-	   cout << "\n\n\t-------------------------------------------------";
+	   cout << "\t-------------------------------------------------";
 	   cout << "-------------------------------------------------\n";
 
-	   cout << "\t\n\nTransfer Log Screen will be here soon...\n\n";
     }
 };
 

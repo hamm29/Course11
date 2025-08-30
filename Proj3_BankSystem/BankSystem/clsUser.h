@@ -6,6 +6,7 @@
 #include <fstream>
 #include "clsString.h"
 #include "clsDate.h"
+#include "clsUtil.h"
 
 using namespace std;
 
@@ -21,6 +22,7 @@ private:
     enMode _Mode;
     string _Username;
     string _Password;
+    string _EncryptedPassword;
     int _Permissions;
 
     bool _MarkedForDelete = false;
@@ -34,7 +36,7 @@ private:
         stUserRecord += User.Email + Seperator;
         stUserRecord += User.Phone + Seperator;
         stUserRecord += User.Username + Seperator;
-        stUserRecord += User.Password + Seperator;
+        stUserRecord += clsUtil::EncryptText(User.Password) + Seperator;
         stUserRecord += to_string(User.Permissions);
 
         return stUserRecord;
@@ -57,7 +59,6 @@ private:
             {
 
                 clsUser User = _ConvertLinetoUserObject(Line);
-
                 vUsers.push_back(User);
             }
 
@@ -69,12 +70,14 @@ private:
 
     }
 
-    static clsUser _ConvertLinetoUserObject(string DateLine)
+    static clsUser _ConvertLinetoUserObject(string Line, string Seperator = "#//#")
     {
-        vector <string >vUser = clsString::Split(DateLine, "#//#");
+        vector<string> vUserData;
+        vUserData = clsString::Split(Line, Seperator);
 
-        return clsUser(enMode::UpdateMode, vUser[0], vUser[1], vUser[2],
-            vUser[3], vUser[4], vUser[5], stoi(vUser[6]));
+        return clsUser(enMode::UpdateMode, vUserData[0], vUserData[1], vUserData[2],
+            vUserData[3], vUserData[4], clsUtil::DecryptText(vUserData[5]), stoi(vUserData[6]));
+
     }
 
     string _PrepareLogInRecord(string Seperator = "#//#")
@@ -82,7 +85,7 @@ private:
         string LoginRegisterLine = "";
         LoginRegisterLine = clsDate::GetSystemDateTimeString() + Seperator;
         LoginRegisterLine += Username + Seperator;
-        LoginRegisterLine += Password + Seperator;
+        LoginRegisterLine += clsUtil::EncryptText(Password) + Seperator;
         LoginRegisterLine += to_string(Permissions);
 
         return LoginRegisterLine;
@@ -98,7 +101,7 @@ private:
 
         LoginRegisterRecord.DateTime = LoginRegisterLine[0];
         LoginRegisterRecord.UserName = LoginRegisterLine[1];
-        LoginRegisterRecord.Password = LoginRegisterLine[2];
+        LoginRegisterRecord.Password = clsUtil::DecryptText(LoginRegisterLine[2]);
         LoginRegisterRecord.Permissions = stoi(LoginRegisterLine[3]);
 
         return LoginRegisterRecord;
@@ -176,6 +179,12 @@ private:
         }
 
     }
+
+    static string EnctyptedPassword(string Password)
+    {
+        return clsUtil::EncryptText(Password);
+    }
+    
 
 public:
 
